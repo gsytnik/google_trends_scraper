@@ -56,32 +56,32 @@ scraper files for google trends using pytrends and pandas.
 
 2) 2 Modified SQL insert statement generator files:
 
-__CREDIT TO Hadi Asemi: https://github.com/Hadiasemi, modified by gsytnik__
--------------------------------------------------------------------------------
-***generate_by_code.py:***
+	__CREDIT TO Hadi Asemi: https://github.com/Hadiasemi, modified by gsytnik__
+	-------------------------------------------------------------------------------
+	***generate_by_code.py:***
 
-if you would like to generate the tuples for a sql insert statement for
-files with formatting: "searchterm_CC.csv" (*CC (country code)*), running this will generate in the console
+	if you would like to generate the tuples for a sql insert statement for
+	files with formatting: "searchterm_CC.csv" (*CC (country code)*), running this will generate in the console
 
-the tuples as: (geo_code, interest, country_code, term) where
+	the tuples as: (geo_code, interest, country_code, term) where
 
-* geo_code = google trend's geocode for this subregion
-* interest = numeric interest value in search term within this region compared to other regions
-* country_code = google trend's geocode for parent country
-* term = search term whose info is being pulled
---------------------------------------------------------------------------------
+	* geo_code = google trend's geocode for this subregion
+	* interest = numeric interest value in search term within this region compared to other regions
+	* country_code = google trend's geocode for parent country
+	* term = search term whose info is being pulled
+	--------------------------------------------------------------------------------
 
-***generate_by_country.py:***
+	***generate_by_country.py:***
 
-if you would like to generate the tuples for a sql insert statement for
-files with formatting: "searchterm_countries.csv", running this will generate in the console
+	if you would like to generate the tuples for a sql insert statement for
+	files with formatting: "searchterm_countries.csv", running this will generate in the console
 
-the tuples as: (geo_code, interest, term) where
+	the tuples as: (geo_code, interest, term) where
 
-* geo_code = google trend's geocode for this country
-* interest = numeric interest value in search term within this region compared to other regions
-* term = search term whose info is being pulled
--------------------------------------------------------------------------------
+	* geo_code = google trend's geocode for this country
+	* interest = numeric interest value in search term within this region compared to other regions
+	* term = search term whose info is being pulled
+	-------------------------------------------------------------------------------
 3) **insert_generator.py**
 
 	**CREDIT TO Hadi Asemi: https://github.com/Hadiasemi**

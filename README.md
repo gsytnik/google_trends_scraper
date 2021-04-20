@@ -3,12 +3,14 @@ scraper files for google trends using pytrends and pandas.
 
 
 # instructions
-	top_trends_scraper.py
+
+***top_trends_scraper.py***
+
 * will generate a csv of top terms for a given year (defaulted to 2020).
 * the usage is documented inside the file, so you can open it and easily change the data it will give you.
-`
-	scraper.py
-`	
+
+***scraper.py***
+
 * will generate csvs of interest levels for a single given search term 
 (which you have to manually plug in via the python code, again well documented)
 
@@ -56,7 +58,7 @@ scraper files for google trends using pytrends and pandas.
 
 __CREDIT TO Hadi Asemi: https://github.com/Hadiasemi, modified by gsytnik__
 -------------------------------------------------------------------------------
-	generate_by_code.py:
+***generate_by_code.py:***
 
 if you would like to generate the tuples for a sql insert statement for
 files with formatting: "searchterm_CC.csv" (*CC (country code)*), running this will generate in the console
@@ -69,7 +71,7 @@ the tuples as: (geo_code, interest, country_code, term) where
 * term = search term whose info is being pulled
 --------------------------------------------------------------------------------
 
-	generate_by_country.py:
+***generate_by_country.py:***
 
 if you would like to generate the tuples for a sql insert statement for
 files with formatting: "searchterm_countries.csv", running this will generate in the console

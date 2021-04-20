@@ -65,6 +65,7 @@ the tuples as: (geo_code, interest, country_code, term) where
 	interest = numeric interest value in search term within this region compared to other regions
 	country_code = google trend's geocode for parent country
 	term = search term whose info is being pulled
+--------------------------------------------------------------------------------
 
 	generate_by_country.py:
 

@@ -6,9 +6,9 @@ scraper files for google trends using pytrends and pandas.
 	top_trends_scraper.py
 * will generate a csv of top terms for a given year (defaulted to 2020).
 * the usage is documented inside the file, so you can open it and easily change the data it will give you.
-
-	`scraper.py`
-	
+`
+	scraper.py
+`	
 * will generate csvs of interest levels for a single given search term 
 (which you have to manually plug in via the python code, again well documented)
 

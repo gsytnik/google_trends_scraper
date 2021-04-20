@@ -49,13 +49,13 @@ scraper files for google trends using pytrends and pandas.
 
 # additional included items:
 
-1) c_codes.csv:
+1) **c_codes.csv:**
 	* this is a csv file containing two columns for every country in google trends
 	* one with the country name
 	* the other with the corresponding country code
 	* although pytrends does this automatically in the other csvs, this can be a convenient csv file to have for a country + country code database.
 
-2) two modified SQL insert statement generator files:
+2) **two modified SQL insert statement generator files:**
 	
 	***generate_by_code.py:***
 

@@ -55,8 +55,7 @@ scraper files for google trends using pytrends and pandas.
 			* although pytrends does this automatically in the other csvs, this can be a convenient csv file to have for a country + country code database.
 
 2) 2 Modified SQL insert statement generator files:
-
-	__CREDIT TO Hadi Asemi: https://github.com/Hadiasemi, modified by gsytnik__
+	CREDIT TO Hadi Asemi: https://github.com/Hadiasemi, modified by gsytnik
 	-------------------------------------------------------------------------------
 	***generate_by_code.py:***
 

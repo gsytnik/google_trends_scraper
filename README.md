@@ -26,7 +26,7 @@ the CC (country code) is a corresponding 2 letter country code for the parent co
 2) too many google http requests in a short time will result in a code 429 - effectively blocking your ip from scraping.
 		you can easily scrape info on up to ten terms before being banned.
 		pytrends states:
-			Rate Limit is not publicly known, let me know if you have a consistent estimate
+			Rate Limit is not publicly known, let me know if you have a consistent estimate.
 			One user reports that 1,400 sequential requests of a 4 hours timeframe got them to the limit. (Replicated on 2 networks)
 			It has been tested, and 60 seconds of sleep between requests (successful or not) is the correct amount once you reach the limit.
 		another way to circumvent this is to use a VPN and switch your IP.

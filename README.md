@@ -52,7 +52,7 @@ the CC (country code) is a corresponding 2 letter country code for the parent co
 			although pytrends does this automatically in the other csvs, this can be a convenient csv file to have for a country + country code database.
 
 2) 2 Modified SQL insert statement generator files:
-	CREDIT TO Hadi Asemi: https://github.com/Hadiasemi, modified by gsytnik
+CREDIT TO Hadi Asemi: https://github.com/Hadiasemi, modified by gsytnik
 
 	generate_by_code.py:
 
@@ -66,7 +66,8 @@ the tuples as: (geo_code, interest, country_code, term) where
 	country_code = google trend's geocode for parent country
 	term = search term whose info is being pulled
 
-		generate_by_country.py:
+	generate_by_country.py:
+
 if you would like to generate the tuples for a sql insert statement for
 files with formatting: "searchterm_countries.csv", running this will generate in the console
 

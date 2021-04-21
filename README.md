@@ -3,6 +3,14 @@ scraper files for google trends using pytrends and pandas.
 
 
 # instructions
+***scraper_v2***
+* New and improved, the scraper_v2 is finally here! 
+* this will do the same thing as both of the files below but will automate the entire process
+* first generates a csv list of top terms based on year you want to search
+* for each term generates csvs of (non - 0) interest values in that term within a given timeframe by country and every subregion in it.
+* **see below for formatting information. csv files will have the same naming scheme as below.**
+* sample files shown in sampleData.zip.
+* open python file and see comments inside on what you can change. provides easily changeable values for year of top terms and timeframe for countries.
 
 ***top_trends_scraper.py***
 
@@ -27,7 +35,7 @@ scraper files for google trends using pytrends and pandas.
 		to get a list of terms to scrape for, can run the top_trends_scraper.py file first
 
 2) **too many google http requests in a short time will result in a code 429 - effectively blocking your ip from scraping.**
-		* you can easily scrape info on up to ten terms before being banned.
+		* you can easily scrape info on up to ten terms before being banned. **may be less terms if using scraper_v2, but it will print out your list in the console so you can manually run the list into the file if you wish by editing a few pieces of code**.
 		* pytrends states:
 			* Rate Limit is not publicly known, let me know if you have a consistent estimate.
 			* One user reports that 1,400 sequential requests of a 4 hours timeframe got them to the limit. (Replicated on 2 networks)
@@ -36,6 +44,10 @@ scraper files for google trends using pytrends and pandas.
 
 3) **csv files do not get allocated to a new subdirectory when you run the script.**
 		* it is up to you to organize all the files into folders thereafter.
+
+4) **currently can't generate csvs for queries with certain special characters.**
+		* currently known characters: {':'}
+		* potential patch coming in the near future, if requested.
 
 
 # dependencies

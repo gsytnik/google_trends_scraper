@@ -32,22 +32,22 @@ scraper files for google trends using pytrends and pandas.
 
 # limitations
 1) **term being scraped must be manually entered.** 
-		to get a list of terms to scrape for, can run the top_trends_scraper.py file first
+	* to get a list of terms to scrape for, can run the top_trends_scraper.py file first
 
 2) **too many google http requests in a short time will result in a code 429 - effectively blocking your ip from scraping.**
-		* you can easily scrape info on up to ten terms before being banned. **may be less terms if using scraper_v2, but it will print out your list in the console so you can manually run the list into the file if you wish by editing a few pieces of code**.
-		* pytrends states:
-			* Rate Limit is not publicly known, let me know if you have a consistent estimate.
-			* One user reports that 1,400 sequential requests of a 4 hours timeframe got them to the limit. (Replicated on 2 networks)
-			* It has been tested, and 60 seconds of sleep between requests (successful or not) is the correct amount once you reach the limit.
-		* another way to circumvent this is to use a VPN and switch your IP.
+	* you can easily scrape info on up to ten terms before being banned. **may be less terms if using scraper_v2, but it will print out your list in the console so you can manually run the list into the file if you wish by editing a few pieces of code**.
+	* pytrends states:
+		* Rate Limit is not publicly known, let me know if you have a consistent estimate.
+		* One user reports that 1,400 sequential requests of a 4 hours timeframe got them to the limit. (Replicated on 2 networks)
+		* It has been tested, and 60 seconds of sleep between requests (successful or not) is the correct amount once you reach the limit.
+	* another way to circumvent this is to use a VPN and switch your IP.
 
 3) **csv files do not get allocated to a new subdirectory when you run the script.**
-		* it is up to you to organize all the files into folders thereafter.
+	* it is up to you to organize all the files into folders thereafter.
 
 4) **currently can't generate csvs for queries with certain special characters.**
-		* currently known characters: {':'}
-		* potential patch coming in the near future, if requested.
+	* currently known characters: {':'}
+	* potential patch coming in the near future, if requested.
 
 
 # dependencies

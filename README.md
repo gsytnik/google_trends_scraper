@@ -36,10 +36,8 @@ scraper files for google trends using pytrends and pandas.
 * **not compatible with scraper generated CSVs. See *"additional included items"* section for compatible versions**
 
 # limitations
-1) **term being scraped must be manually entered.** 
-	* to get a list of terms to scrape for, can run the top_trends_scraper.py file first
 
-2) **too many google http requests in a short time will result in a code 429 - effectively blocking your ip from scraping.**
+1) **too many google http requests in a short time will result in a code 429 - effectively blocking your ip from scraping.**
 	* you can easily scrape info on up to ten terms before being banned. **may be less terms if using scraper_v2, but it will print out your list in the console so you can manually run the list into the file if you wish by editing a few pieces of code**.
 	* pytrends states:
 		* Rate Limit is not publicly known, let me know if you have a consistent estimate.
@@ -47,12 +45,16 @@ scraper files for google trends using pytrends and pandas.
 		* It has been tested, and 60 seconds of sleep between requests (successful or not) is the correct amount once you reach the limit.
 	* another way to circumvent this is to use a VPN and switch your IP.
 
-3) **csv files do not get allocated to a new subdirectory when you run the script.**
+2) **csv files do not get allocated to a new subdirectory when you run the script.**
 	* it is up to you to organize all the files into folders thereafter.
 
-4) **currently can't generate csvs for queries with certain special characters.**
+3) **currently can't generate csvs for queries with certain special characters.**
 	* currently known characters: {':'}
 	* potential patch coming in the near future, if requested.
+
+
+4) **if running scraper.py and not scraper_v2, terms to scrape must be entered manually**
+	* open file for instructions on how to do so.
 
 
 # dependencies

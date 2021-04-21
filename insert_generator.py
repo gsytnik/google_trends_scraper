@@ -1,32 +1,26 @@
 #!/usr/bin/env python3
-# files = ['customers.csv', 'goods.csv', 'items.csv', 'receipts.csv']
-import os
+import csv
+from glob import glob
 
-filenames=os.listdir('.')
-files = list(filter(lambda f: f.endswith('.csv'), filenames))
-for file_ in files:
-   print(f"------------- {file_} --------------")
-   with open(file_) as csv:
-       try:
-           lines = csv.readlines()
-       except:
-           continue
 
-   count = 0
-   for line in lines:
-       if count != 0:
-           line = line.strip("\n").split(',')
 
-           line = [record.strip() for record in line]
-           for idx in range(1, len(line)):
-               try:
-                   new = int(line[idx])
-                   line[idx] = new
-               except:
-                   continue
+def handle_int_float_csv(d):
+  if not d:
+      return d
+  try:
+      f = float(d)
+      i = int(f)
+      return i if f == i else f
+  except ValueError:
+      return d
 
-           line = tuple(line)
-           if len(line) > 1:
-               print(line, ',')
-       count+=1
 
+# Get all the CSV file in the directory
+for file in glob('*.csv'):
+  with open(file) as f:
+    print(f'\n------------{file}---------\n')
+    r = csv.reader(f)
+    next(r)   
+    for row in r:
+        row = tuple(list(map(handle_int_float_csv,row)))
+        print(row)

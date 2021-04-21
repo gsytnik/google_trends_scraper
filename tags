@@ -1,0 +1,6 @@
+!_TAG_FILE_SORTED	2	/0=unsorted, 1=sorted, 2=foldcase/
+csv	/Users/hadiasemi/Desktop/google_trends_scraper/insert_generator.py	/^import csv$/;"	i	language:Python
+glob	/Users/hadiasemi/Desktop/google_trends_scraper/insert_generator.py	/^from glob import glob$/;"	i	language:Python
+handle_int_float_csv	/Users/hadiasemi/Desktop/google_trends_scraper/insert_generator.py	/^def handle_int_float_csv(d):$/;"	f	language:Python
+r	/Users/hadiasemi/Desktop/google_trends_scraper/insert_generator.py	/^    r = csv.reader(f)$/;"	v	language:Python
+row	/Users/hadiasemi/Desktop/google_trends_scraper/insert_generator.py	/^        row = tuple(list(map(handle_int_float_csv,row)))$/;"	v	language:Python

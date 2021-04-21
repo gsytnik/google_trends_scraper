@@ -22,13 +22,18 @@ scraper files for google trends using pytrends and pandas.
 * will generate csvs of interest levels for a single given search term 
 (which you have to manually plug in via the python code, again well documented)
 
-**one csv will be formatted as "searchterm_countries.csv"**
-* this csv is a list of interest levels by country
+* **one csv will be formatted as "searchterm_countries.csv"**
+	* this csv is a list of interest levels by country
 
-**the rest of the csv files will be formatted as "searchterm_CC.csv"**
-* this csv is a list of interest levels by subregion of the country with countrycode.
-* the CC (country code) is a corresponding 2 letter country code for the parent country of the subregions in this csv
+* **the rest of the csv files will be formatted as "searchterm_CC.csv"**
+	* this csv is a list of interest levels by subregion of the country with countrycode.
+	* the CC (country code) is a corresponding 2 letter country code for the parent country of the subregions in this csv
 
+***insert_generator.py***
+
+* **CREDIT TO Hadi Asemi: https://github.com/Hadiasemi**
+* will generate SQL Insert compatible tuples for EVERY file in the same directory that this file is run in.
+* **not compatible with scraper generated CSVs. See *"additional included items"* section for compatible versions**
 
 # limitations
 1) **term being scraped must be manually entered.** 

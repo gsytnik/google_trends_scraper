@@ -18,15 +18,18 @@ timef_for_term = 2019
 # where # can be {1, 3, 12} for m; {1, 7} for d; {1, 4} for H
 timef_for_loc = '2019-01-01 2019-12-31'
 
+# make list of top terms in time frame
 def gen_top_terms(tframe):
 	
-
-	# generates topcharts for year or year an month, int formatted as YYYY (see pytrends documentation)
+	# generates topcharts for year, int formatted as YYYY (see pytrends documentation)
 	topcharts = pytrends.top_charts(tframe, hl='en-US', tz=300, geo='GLOBAL').reset_index()
 	topcharts.to_csv("top_terms.csv")
 	print(topcharts)
 
-
+	
+# generates a CSV named <term>_countries.csv which is a list of all countries that have
+# searched the term, their country code, and the interest level 1-100 of the search term relative
+# to other countries	
 def gen_country_interests(term, tframe):
 	# change this keyword for what keyword you want to use.
 	kw_list = [term]
@@ -54,6 +57,9 @@ def gen_country_interests(term, tframe):
 	countriesdf.to_csv(term + "_countries.csv")
 
 
+# generates a CSV named <keyword>_<countrycode>.csv which is a list of all regions in a country that have
+# searched the term, their country and region code, and the interest level 1-100 of the search term relative
+# to other regions
 def gen_subregion_interests(term, country_code, tframe, ptrend):
 	
 	kw_list = [term]

@@ -33,7 +33,7 @@ scraper files for google trends using pytrends and pandas.
 
 * **CREDIT TO Hadi Asemi: https://github.com/Hadiasemi**
 * will generate SQL Insert compatible tuples for EVERY file in the same directory that this file is run in.
-* **not compatible with scraper generated CSVs. see "additional included items" section for compatible versions**
+* **not compatible with scraper generated CSVs. See *"additional included items"* section for compatible versions**
 
 # limitations
 1) **term being scraped must be manually entered.** 

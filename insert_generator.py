@@ -2,8 +2,6 @@
 import csv
 from glob import glob
 
-
-
 def handle_int_float_csv(d):
   if not d:
       return d

@@ -2,6 +2,8 @@ from pytrends.request import TrendReq
 import pandas as pd
 pytrends = TrendReq()
 
+# TO MANUALLY ADD WORDS, REFERENCE COMMENTS ON LINE 91 IN THE CODE
+
 # int formatted as YYYY (see pytrends documentation)
 # year for list of top searched terms.
 timef_for_term = 2019
@@ -83,7 +85,11 @@ def main():
 	gen_top_terms(timef_for_term)
 	
 	df = pd.read_csv("top_terms.csv")
+	
+	# change this array to the words you want searched
+	# if you need to run this file additional times because of http: 429 
 	words = [word for word in df.title]
+	
 	print(words)
 
 	for word in words:
@@ -94,7 +100,6 @@ def main():
 			gen_subregion_interests(word, code, timef_for_loc, pytrends2)
 
 	print("finished") 
-
 
 
 if __name__ == '__main__':

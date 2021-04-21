@@ -30,9 +30,10 @@ scraper files for google trends using pytrends and pandas.
 	* the CC (country code) is a corresponding 2 letter country code for the parent country of the subregions in this csv
 
 ***insert_generator.py***
-	* **CREDIT TO Hadi Asemi: https://github.com/Hadiasemi**
-	* will generate SQL Insert compatible tuples for EVERY file in the same directory that this file is run in.
-	* **not compatible with scraper generated CSVs. see "additional included items" section for compatible versions**
+
+* **CREDIT TO Hadi Asemi: https://github.com/Hadiasemi**
+* will generate SQL Insert compatible tuples for EVERY file in the same directory that this file is run in.
+* **not compatible with scraper generated CSVs. see "additional included items" section for compatible versions**
 
 # limitations
 1) **term being scraped must be manually entered.** 

@@ -35,6 +35,15 @@ scraper files for google trends using pytrends and pandas.
 * will generate SQL Insert compatible tuples for EVERY file in the same directory that this file is run in.
 * **not compatible with scraper generated CSVs. See *"additional included items"* section for compatible versions**
 
+# recommendations:
+
+to make things simpler, after running either scraper(s): 
+
+1) organize all files with format: "term_countries.csv" into one folder and run **generate_by_country.py** in that folder.
+
+2) then, organize all files with format: "term_CC.csv" (*CC (country code)*) into another folder, or folders by term,
+and run the **generate_by_code.py** file in the folder(s) to get the insert statements for these items.
+
 # limitations
 
 1) **too many google http requests in a short time will result in a code 429 - effectively blocking your ip from scraping.**
@@ -109,14 +118,5 @@ scraper files for google trends using pytrends and pandas.
 	via line[1:] because of the row 0 column 0 slot being a blank value. 
 	* will work for most other CSV files though.
 
-
-# recommendations:
-
-to make things simpler, after running both scrapers: 
-
-1) organize all files with format: "term_countries.csv" into one folder and run **generate_by_country.py** in that folder.
-
-2) then, organize all files with format: "term_CC.csv" (*CC (country code)*) into another folder, or folders by term,
-and run the **generate_by_code.py** file in the folder(s) to get the insert statements for these items.
 
 
